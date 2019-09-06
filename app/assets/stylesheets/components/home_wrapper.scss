@@ -1,0 +1,46 @@
+#wrapper {
+  height: 100vh;
+  // background-color: #2f2f2f;
+  background-image: url('https://res.cloudinary.com/dxy1zcexj/image/upload/v1567673024/coding_qv68bo.png');
+  // background-image: url('../../images/coding.png');
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: none;
+  margin-top: 240px;
+  background-color: transparent;
+}
+
+.home h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+.home p {
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 2px 5px 34px -12px rgba(255,255,255,1);
+  padding: 3px;
+  padding-top: 5px;
+  width: 130px;
+  height: 35px;
+  text-align: center;
+  justify-content: center;
+  // margin-left: 123px;
+}
+
+.home a {
+  text-decoration: none;
+  color: white;
+}
+.home p:hover {
+  background-color: #64C7CC;
+  border: none;
+  font-weight: bold;
+}
+
+.home a:hover {
+}
