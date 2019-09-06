@@ -20,12 +20,14 @@
         <div class="card">
          <h2>Hello, I'm Nick Stern.</h2>
          <h2>I'm a Full-stack web developer.</h2>
-         <p><a href="">View my work</a></p>
+         <p><a href="#bio-wrapper">View my work</a></p>
         </div>
       </div>
     </div>
 
+
     <%= render "shared/nav" %>
+
     <div id="bio-wrapper">
       <div class="container hex-item">
         <div class="text d-flex justify-content-center">
@@ -42,7 +44,7 @@
             </div>
               <div class="icon-description">
                  <h3>Fast</h3>
-                 <p>Fast load times and lag free interaction</p>
+                 <p>Fast load times and lag free interaction.</p>
               </div>
           </div>
           <div class="col-sm">
@@ -81,6 +83,7 @@
         </div>
       </div>
     </div>
+      <div class="border-bot"></div>
 
     <div id="portfolio-wrapper">
       <h2 class="project-text" style="
@@ -101,30 +104,40 @@
           });
         </script>
     </div>
+        <div class="border-bot"></div>
 
     <div id="contact-wrapper">
-     <!--  <div class= "form-container d-flex justify-content-center">
-
-          <form class="">
-            <input placeholder="Name" type="text" name="name" required>
-            <br>
-            <input placeholder="Enter email" type="email" name="email" required>
-            <br>
-            <textarea placeholder="Your Message" type="text" name="message"></textarea>
-
-          </form>
-
-
-
-
-      </div> -->
-      <%= render "shared/form" %>
-
-
+      <h2 class="project-text" style="
+            text-align: center;
+            margin-bottom: 10px; padding-top: 15px;">Contact</h2>
+      <p style="color: #64C7CC; text-align: center;">Have a question or want to work together?</p>
+      <%= render "shared/test_form" %>
     </div>
-    <%= render "shared/footer" %>
+
+    <footer>
+      <%= render "shared/footer" %>
+    </footer>
+
     <%= yield %>
     <%= javascript_include_tag "application" %>
     <%= javascript_pack_tag "application" %>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+          <script>
+      jQuery(function($) {
+
+        // The speed of the scroll in milliseconds
+        var speed = 1000;
+
+        // Find links that are #anchors and scroll to them
+        $('a[href^=#]')
+          .not('.lp-pom-form .lp-pom-button')
+          .unbind('click.smoothScroll')
+          .bind('click.smoothScroll', function(event) {
+            event.preventDefault();
+            $('html, body').animate({ scrollTop: $( $(this).attr('href') ).offset().top }, speed);
+          });
+      });
+    </script>
   </body>
 </html>
