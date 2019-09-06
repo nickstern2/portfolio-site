@@ -92,9 +92,6 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
-    mail_form (1.8.0)
-      actionmailer (>= 5.0)
-      activemodel (>= 5.0)
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (0.9.2)
@@ -145,7 +142,6 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    rdoc (6.1.0)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
@@ -209,8 +205,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  actionmailer (~> 5.2.0)
-  activemodel (~> 5.2.0)
   autoprefixer-rails
   bootsnap (>= 1.1.0)
   byebug
@@ -220,11 +214,9 @@ DEPENDENCIES
   font-awesome-sass (~> 5.6.1)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
-  mail_form
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
   rails (~> 5.2.3)
-  rdoc
   sass-rails (~> 5.0)
   simple_form
   spring
